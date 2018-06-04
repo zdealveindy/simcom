@@ -1,0 +1,16 @@
+Package: simcom
+Type: Package
+Title: Generating simulated community data
+Version: 0.1.0
+Date: 2018-06-04
+Authors@R: person("Zeleny", "David", email = "zeleny.david@gmail.com", role = c("aut", "cre"))
+Maintainer: David Zeleny <zeleny.david@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+Imports:
+    RColorBrewer,
+    vegan,
+Encoding: UTF-8
+License: GPL-2
+LazyData: true
+RoxygenNote: 6.0.1
