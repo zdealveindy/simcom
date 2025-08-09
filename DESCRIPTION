@@ -1,16 +1,17 @@
 Package: simcom
 Type: Package
-Title: Generating simulated community data
-Version: 0.1.0
-Date: 2018-06-04
+Title: Simulating and plotting simulated community data along one or multiple environmental gradients
+Version: 0.2.0
+Date: 2025-08-09
 Authors@R: person("Zeleny", "David", email = "zeleny.david@gmail.com", role = c("aut", "cre"))
 Maintainer: David Zeleny <zeleny.david@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: The package simulates and samples community ecology data along one or multiple ecological gradients. For simulations, it uses a set of species response curves (predicted by beta function) with different shapes and amplitudes. For sampling it uses multiple samples (sampling species using fixed number of individuals, or preferred proportion of species in species pool). Algorithm offers a number of parameters which can modify the number of ecological gradients, number of species, shape of species response curves, distribution of species along the gradient, number of samples, distribution of samples along the gradients, sampling efficiency (set by number of individuals to be sampled, or a relative proportion of species from the species pool), etc. Distribution of species along each gradient can be plotted, and distribution of species within 2D ecospace can be also plotted. 
 Imports:
     RColorBrewer,
     vegan,
+    graphics,
+    stats,
 Encoding: UTF-8
 License: GPL-2
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 7.3.2

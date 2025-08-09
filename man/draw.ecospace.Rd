@@ -2,23 +2,36 @@
 % Please edit documentation in R/draw.ecospace.r
 \name{draw.ecospace}
 \alias{draw.ecospace}
-\title{Draws ecospace with species response surface for two dimensional simulated data}
+\title{Draws ecospace with species response surface for two dimensional data simulated and sampled by simul.comm and sample.comm.}
 \usage{
-draw.ecospace(sampled.comm, resolution = 200, colors = NULL,
-  species = NULL, sort = TRUE, asp = 1, sample.pch = 3,
-  sample.cex = 0.5, species.pch = 16, species.cex = 1,
-  xlab = "gradient 1", ylab = "gradient 2", axes = T, box = T, ...)
+draw.ecospace(
+  saco,
+  plot.grad = c(1, 2),
+  resolution = 200,
+  colors = NULL,
+  species = NULL,
+  asp = NULL,
+  sample.pch = 3,
+  sample.cex = 0.5,
+  species.pch = 16,
+  species.cex = 1,
+  xlab = "gradient 1",
+  ylab = "gradient 2",
+  axes = TRUE,
+  box = TRUE,
+  ...
+)
 }
 \arguments{
-\item{sampled.comm}{Object with simulated community data created by \code{sample.comm.2} function.}
+\item{saco}{Object with simulated community data created by \code{sample.comm.2} function.}
+
+\item{plot.grad}{List gradients which should be plotted by the function.}
 
 \item{resolution}{Number of items drawn vertically and horizontally. Default = 200.}
 
 \item{colors}{Vector of hexadecimal strings of colors used to draw individual species response surfaces. Each element should be 7 characters long, starting with \code{"#"} (e.g. \code{"#8DD3C7"}). Default is a vector of 12 colors created by pallete "Set3" from \code{library (RColorBrewer)}.}
 
 \item{species}{Vector with ID's of species drawn into plot. Default = NULL, which means all species are drawn.}
-
-\item{sort}{Should be species sorted before drawing, so as the species with largest area in the plot are drawn first? Default = TRUE.}
 
 \item{asp}{Aspect ratio of the plotted region (see argument \code{asp} in \code{\link{plot.window}}).}
 
@@ -35,13 +48,7 @@ draw.ecospace(sampled.comm, resolution = 200, colors = NULL,
 \item{...}{Other arguments passed into the function \code{title}.}
 }
 \description{
-Draws ecospace with species response surface for two dimensional simulated data
-}
-\examples{
-draw.ecospace (sample.comm.2 (simul.comm.2 (totS = 100)), resolution = 100)
-}
-\seealso{
-\code{\link{simul.comm.2}}, \code{\link{sample.comm.2}}
+Draws ecospace with species response surface for two dimensional data simulated and sampled by simul.comm and sample.comm.
 }
 \author{
 David Zeleny (zeleny.david@gmail.com)

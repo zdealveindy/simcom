@@ -4,8 +4,17 @@
 \alias{simul.RLQ}
 \title{Simulation model sensu Dray & Legendre (2008), creating \bold{R}, \bold{L} and \bold{Q} matrices}
 \usage{
-simul.RLQ(n = 100, p = 100, mi.tol = 10, scenario = 1, add.noise = F,
-  pa = F, prop.noise.speatt = 0, prop.noise.env = 0, set.seed = NULL)
+simul.RLQ(
+  n = 100,
+  p = 100,
+  mi.tol = 10,
+  scenario = 1,
+  add.noise = F,
+  pa = F,
+  prop.noise.speatt = 0,
+  prop.noise.env = 0,
+  set.seed = NULL
+)
 }
 \arguments{
 \item{n}{Integer. Number of samples.}
