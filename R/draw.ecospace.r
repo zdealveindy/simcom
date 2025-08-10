@@ -12,6 +12,7 @@
 #' @param box Logical; draw the box around plotting region?
 #' @param axes Logical; draw axes?
 #' @param ... Other arguments passed into the function \code{title}.
+#' @importFrom graphics lines par points
 #' @rdname draw.ecospace
 #' @export
 draw.ecospace <- function (saco, plot.grad = c(1,2), resolution = 200, colors = NULL, species = NULL, asp = NULL, sample.pch = 3, sample.cex = .5, species.pch = 16, species.cex = 1, xlab = 'gradient 1', ylab = 'gradient 2', axes = TRUE, box = TRUE, ...)

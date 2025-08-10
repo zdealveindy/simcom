@@ -43,10 +43,8 @@
 #' 
 #' @references
 #' Dray S. & Legendre P. 2008. Testing the species traits-environment relationships: the fourth-corner problem revisited. Ecology, 89:3400-3412.
+#' @importFrom stats rbinom rexp rlnorm rnorm runif
 #' @export
-#' 
-
-# the function to simulate the RLQ matrices (sensu Dray & Legendre 2008)
 simul.RLQ <- function (n = 100, p = 100, mi.tol = 10, scenario = 1, add.noise = F, pa = F, prop.noise.speatt = 0, prop.noise.env = 0, set.seed = NULL)
 {
   if (!is.null (set.seed)) set.seed (set.seed)
