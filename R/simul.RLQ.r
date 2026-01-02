@@ -1,6 +1,6 @@
 #' Simulation model sensu Dray & Legendre (2008), creating \bold{R}, \bold{L} and \bold{Q} matrices
 #' 
-#' Dray & Legendre (2008) suggested an algorithm for generating three matrices (\bold{R}, \bold{L} and \bold{Q}) to test the performance of different permutation scenarios in the fourht corner analysis. This function reproduces their algorithm according to the description given in their article, and implements some additional functionality, such as adding proportional noise to species attributes and/or sample attributes matrix. 
+#' Dray & Legendre (2008) suggested an algorithm for generating three matrices (\bold{R}, \bold{L} and \bold{Q}) to test the performance of different permutation scenarios in the fourth corner analysis. This function reproduces their algorithm according to the description given in their article, and implements some additional functionality, such as adding proportional noise to species attributes and/or sample attributes matrix. 
 #' 
 #' @param n Integer. Number of samples.
 #' @param p Integer. Number of species.

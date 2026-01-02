@@ -23,13 +23,13 @@ draw.ecospace(
 )
 }
 \arguments{
-\item{saco}{Object with simulated community data created by \code{sample.comm.2} function.}
+\item{saco}{Object with simulated community data created by \code{sample.comm} function.}
 
 \item{plot.grad}{List gradients which should be plotted by the function.}
 
 \item{resolution}{Number of items drawn vertically and horizontally. Default = 200.}
 
-\item{colors}{Vector of hexadecimal strings of colors used to draw individual species response surfaces. Each element should be 7 characters long, starting with \code{"#"} (e.g. \code{"#8DD3C7"}). Default is a vector of 12 colors created by pallete "Set3" from \code{library (RColorBrewer)}.}
+\item{colors}{Vector of hexadecimal strings of colors used to draw individual species response surfaces. Each element should be 7 characters long, starting with \code{"#"} (e.g. \code{"#8DD3C7"}). Default is a vector of 12 colors created by pallet "Set3" from \code{library (RColorBrewer)}.}
 
 \item{species}{Vector with ID's of species drawn into plot. Default = NULL, which means all species are drawn.}
 
@@ -37,13 +37,13 @@ draw.ecospace(
 
 \item{sample.pch, sample.cex}{Plotting character and its size for points showing location of samples in ecospace. See \code{pch} and \code{cex} in function \code{\link{points}}.}
 
-\item{species.pch, species.cex}{Plotting character and its size for points forming the species response surfase in the ecospace. See \code{pch} and \code{cex} in function \code{\link{points}}.}
+\item{species.pch, species.cex}{Plotting character and its size for points forming the species response surface in the ecospace. See \code{pch} and \code{cex} in function \code{\link{points}}.}
 
 \item{xlab, ylab}{x- and y-axis labels.}
 
-\item{axes}{Logical; draw axes?}
+\item{axes}{Logical; draw axes? Default is TRUE.}
 
-\item{box}{Logical; draw the box around plotting region?}
+\item{box}{Logical; draw the box around plotting region? Default is TRUE.}
 
 \item{...}{Other arguments passed into the function \code{title}.}
 }
