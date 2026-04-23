@@ -167,11 +167,11 @@ sample.comm <- function (sico = NULL, Np = 100, sampling = "random", no.ind = 10
   sample.x <- vector ('list', length = sico$grad)
   if (sampling == "random") for (gr in seq (1, sico$grad)) sample.x[[gr]] <- trunc(sample(c(2:sico$gr.length[gr])-1, Np, replace = T)) else
     #Equal sample intervals along gradient
-    if (sampling == "equal") for (gr in seq (1, sico$grad)) sample.x[[gr]] <- trunc(seq(2, sico$gr.length[gr]-1, length=Np)) else
+    if (sampling == "equal") for (gr in seq (1, sico$grad)) sample.x[[gr]] <- trunc(sample (seq(2, sico$gr.length[gr]-1, length=Np))) else
       #Biased sample intervals along gradient
       if (sampling == 'biased')
         for (gr in seq (1, sico$grad)) {
-          exp.x <- sort (rexp(Np, rate=20))
+          exp.x <- rexp(Np, rate=20) # sort removed
           exp.sample.x <- trunc(exp.x/(max(exp.x))*(sico$gr.length[gr]-1))
           while(length(unique(exp.sample.x)) != Np)
             exp.sample.x[duplicated(exp.sample.x)] <- exp.sample.x[duplicated(exp.sample.x)]+1
